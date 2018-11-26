@@ -1,0 +1,9 @@
+TODO :
+
+create header and footer for every page actually only index.php contains it
+
+work on profile.php and news_feed.php
+then search.php
+friends and poke
+
+and the project ends

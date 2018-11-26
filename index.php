@@ -36,17 +36,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <table width="100%" cellspacing="0" cellpadding="4" border="0">
-                              <tbody>
-                                <tr height="21">
-                                  <td valign="bottom" bgcolor="#3B5998">&nbsp;<a class="menu" href="login.php">login</a></td>
-                                  <td valign="bottom" bgcolor="#3B5998">&nbsp;<a class="menu" href="register.php">register</a></td>
-                                  <td valign="bottom" bgcolor="#3B5998">&nbsp;<a class="menu" href="about.php">about</a></td>
-                                  <td valign="bottom" bgcolor="#3B5998">&nbsp;<a class="menu" href="faq.php">faq</a></td>
-                                  <td width="100%" bgcolor="#3B5998">&nbsp;</td>
-                                </tr>
-                              </tbody>
-                            </table>
+                            <?php include('./html/header.php'); ?>
                           </td>
                         </tr>
                       </tbody>
@@ -251,18 +241,7 @@
               </tbody>
             </table>
             <center>
-              <p><a href="about.php">about</a>&nbsp;&nbsp;
-                <a href="contact.php">contact</a>&nbsp;&nbsp;
-                <a href="jobs.php">jobs</a>&nbsp;&nbsp;
-                <!--<a href="faq.php">faq</a>&nbsp;&nbsp;-->
-                <a href="announce.php">announce</a>&nbsp;&nbsp;
-                <a href="media.php">advertise</a>&nbsp;&nbsp;
-                <a href="terms.php">terms</a>&nbsp;&nbsp;
-                <a href="policy.php">privacy</a>&nbsp;&nbsp;<span title="ik">&nbsp;</span>&nbsp;&nbsp;
-                <br>a Mark Zuckerberg production
-                <br>Thefacebook <span title="6ms">©</span> <span title="">20</span><span title="360624">05</span>
-                <br>
-              </p>
+              <?php include('./html/footer.php'); ?>
             </center><br>
           </td>
         </tr>
