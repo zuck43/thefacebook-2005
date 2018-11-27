@@ -1,0 +1,33 @@
+<table class="dashedtable" cellspacing="0" cellpadding="0" width=100%>
+  <tbody>
+    <tr>
+      <td align=left>
+        <center>
+        <p>
+          <form action="search.php">
+            <input class="inputtext" name=name type=text style="width:85px">
+            <br>quick&nbsp;search&nbsp;<input type="submit" class="inputsubmit" style="width:22px" value="go">
+          </form>
+        </p>
+        </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table class="dashedtable" cellspacing=0 cellpadding=10 width=100%>
+  <tr>
+    <td align=left>
+      <p style="color:#538ADC">
+        <a href="profile.php">My Profile</a> [ <a href="editprofile.php">edit</a> ]<br>
+        <a href="reqs.php">My&nbsp;Requests&nbsp;<b>[<?PHP echo '4';?> ]</b></a><br>
+        <a href="editfriends.php">My Friends</a><br>
+        <a href="browse.php">My Network</a><br>
+        <a href="messages.php">My Messages</a> <?PHP echo "<b>2</b>"; ?>
+        <br>
+        <a href="account.php">My Account</a><br>
+        <a href="accountprivacy.php">My Privacy</a><br>
+      </p>
+    </td>
+  </tr>
+</table>
