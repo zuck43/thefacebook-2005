@@ -36,7 +36,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <?php include('./html/header_logged.php'); ?>
+                            <?php include('./html/logged_header.php'); ?>
                           </td>
                         </tr>
                       </tbody>
@@ -57,7 +57,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <?php include('./html/left_panel_logged.php');  ?>
+                            <?php include('./html/logged_left_panel.php');  ?>
                           </td>
                         </tr>
                       </tbody>

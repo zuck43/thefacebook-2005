@@ -36,7 +36,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <?php include('./html/header.php'); ?>
+                            <?php include('./html/default_header.php'); ?>
                           </td>
                         </tr>
                       </tbody>
@@ -57,7 +57,7 @@
                       <tbody>
                         <tr>
                           <td>
-                            <?php include('./html/left_panel.php');  ?>
+                            <?php include('./html/default_left_panel.php');  ?>
                           </td>
                         </tr>
                       </tbody>

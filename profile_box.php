@@ -1,6 +1,6 @@
 <?php
-include('./lib/Profile.php');
-$profile = new Profile();
+include('./lib/classes/profile.php');
+$profile = new profile();
 ?>
 <br>
 <table cellspacing=0 cellpadding=2 border=0 width=100%>
