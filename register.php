@@ -34,7 +34,7 @@
                             <table width="100%" cellspacing="0" cellpadding="0" border="0">
                               <tbody>
                                 <tr>
-                                  <td><a href="index.php"><img src="./images/logo-right.jpg" border="0"></a></td>
+                                  <td bgcolor="#3B5998"><a href="index.php"><img src="./images/logo-right.jpg" border="0"></a></td>
                                   <td width="100%" bgcolor="#3B5998">&nbsp;</td>
                                 </tr>
                               </tbody>
