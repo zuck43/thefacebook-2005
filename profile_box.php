@@ -1,8 +1,3 @@
-<?php
-include('./lib/classes/profile.php');
-$profile = new profile();
-?>
-<br>
 <table cellspacing=0 cellpadding=2 border=0 width=100%>
   <tr>
     <td class='white' bgcolor=#3B5998 colspan=2>
@@ -16,7 +11,7 @@ $profile = new profile();
   </tr>
 </table>
 
-<table cellspacing=0 cellpadding=2 border=0 width=95%>
+<table class='bordertable' cellspacing=0 cellpadding=2 border=0 width=100%>
   <tr>
     <td>
       <table cellspacing=0 cellpadding=0 border=0>

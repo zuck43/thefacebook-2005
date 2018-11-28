@@ -8,7 +8,10 @@
   <link rel="StyleSheet" href="style.css" type="text/css" title="8-bit Color Style">
   <link rel="Shortcut icon" href="images/favicon.ico">
 </head>
-
+<?php
+include('./lib/classes/profile.php');
+$profile = new profile();
+?>
 <body>
   <center>
     <table class="bordertable" width="700" cellspacing="0" cellpadding="0" border="0">
@@ -68,28 +71,36 @@
                       <tbody>
                         <tr>
                           <td>
-
                             <table width="100%" cellspacing="0" cellpadding="2" border="0">
                               <tbody>
                                 <tr>
                                   <td class="white" bgcolor="#3B5998">Profile (This is you)</td>
+                                  <table width="100%" cellspacing="0" cellpadding="2" border="0">
+                                    <tbody>
+                                      <tr>
+                                        <td><?php include('profile_pic.php');  ?></td>
+                                        <td><?php include('profile_box.php');  ?></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </tr>
                               </tbody>
                             </table>
-                            <center>
-                              <?php include('profile_box.php');  ?>
-                            </center>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </td>
                 </tr>
+                <tr>
+                  <td>
+                    <center>
+                      <?php include('./html/footer.php'); ?>
+                    </center><br>
+                  </td>
+                </tr>
               </tbody>
             </table>
-            <center>
-              <?php include('./html/footer.php'); ?>
-            </center><br>
           </td>
         </tr>
       </tbody>

@@ -20,9 +20,8 @@
     <td align=left>
       <p style="color:#538ADC">
         <a href="profile.php">My Profile</a> [ <a href="editprofile.php">edit</a> ]<br>
-        <a href="reqs.php">My&nbsp;Requests&nbsp;<b>[<?PHP echo '4';?> ]</b></a><br>
-        <a href="editfriends.php">My Friends</a><br>
-        <a href="browse.php">My Network</a><br>
+        <a href="friends.php">My Friends</a><br>
+        <a href="groups.php">My Groups</a><br>
         <a href="messages.php">My Messages</a> <?PHP echo "<b>2</b>"; ?>
         <br>
         <a href="account.php">My Account</a><br>

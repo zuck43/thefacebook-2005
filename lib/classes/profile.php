@@ -6,8 +6,8 @@ class profile{
   public $school = 'Harvard';
   public $status = 'Single';
   public $sex = 'Male';
-  public $residence = 'Palo Alto';
-  public $birthday = '01/01/2000';
+  public $residence = 'San Francisco, CA';
+  public $birthday = '14/05/1984';
   public $hometown = 'Palo Alto';
   public $highschool = 'MIT';
   public $email = 'zuck@facebook.com';
@@ -17,9 +17,10 @@ class profile{
   public $lookingfor = 'Female';
   public $interestedin = 'Woman';
   public $relstatus = 'Single';
-  public $political = 'liberal';
+  public $political = 'Liberal';
   public $interests = 'Traveling, Reading';
   public $music = 'Hip Hop';
+  public $defaultpic = 'default.jpg';
 
 }
 
