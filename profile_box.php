@@ -37,7 +37,7 @@
                   Member&nbsp;Since:
                 </td>
                 <td>
-                  <?php echo $profile->member_sice; ?>
+                  <?php echo "$profile->member_since"; ?>
                 </td>
               <tr>
               <tr>
@@ -45,7 +45,7 @@
                   Last&nbsp;Update:
                 </td>
                 <td>
-                  <?php echo $profile->last_update; ?>
+                  <?php echo "$profile->last_update"; ?>
                 </td>
               <tr>
               <tr>
@@ -168,7 +168,7 @@
                   Relationship&nbsp;Status:
                 </td>
                 <td>
-                  <?php echo $profile->reltionship	?>
+                  <?php echo $profile->relationship	?>
                 </td>
               <tr>
               <tr>

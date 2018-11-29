@@ -30,37 +30,15 @@ class profile{
     $this->id = $id;
 
     /*
-    $sql = "SELECT * FROM users WHERE id = $user_id";
+    $sql = "SELECT * FROM users WHERE id = $id";
     $query = mysql_query($sql) or die(mysql_error());
     $info = mysql_fetch_array($query);
     */
+    include("users.php");
 
-    /* BEGIN DATA */
-    $zuck = array(
-      "name"=>"Mark Zuckerberg",
-      "member_since"=>"04/04/2004",
-      "last_update"=>"05/05/2005",
-      "school"=>"Harvard",
-      "status"=>"Student",
-      "sex"=>"Male",
-      "birthday"=>"14/05/1984",
-      "home_town"=>"San Francisco, CA",
-      "high_school"=>"MIT",
-      "email"=>"zuck@facebook.com",
-      "screenname"=>"zuck",
-      "mobile"=>"5551234",
-      "looking_for"=>"Friendship",
-      "interested_in"=>"Woman",
-      "relaionship"=>"Single",
-      "political_view"=>"Liberal",
-      "interests"=>"Traveling, Reading",
-      "favourite_music"=>"Hip Hop",
-      "picture"=>"default.jpg",
-    );
-    foreach ($zuck as $key => $value) {
+    foreach ($info as $key => $value) {
       $profile[$key]=$value;
     };
-    /* END DATA */
 
     $this->name = $profile["name"];
     $this->member_since = $profile["member_since"];
@@ -76,7 +54,7 @@ class profile{
     $this->mobile = $profile["mobile"];
     $this->looking_for = $profile["looking_for"];
     $this->interested_in = $profile["interested_in"];
-    $this->reltionship = $profile["relationship"];
+    $this->relationship = $profile["relationship"];
     $this->political_view = $profile["political_view"];
     $this->interests = $profile["interests"];
     $this->favourite_music = $profile["favourite_music"];
