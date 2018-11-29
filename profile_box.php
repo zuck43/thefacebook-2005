@@ -29,7 +29,7 @@
                   Name:
                 </td>
                 <td style="width:187px">
-                  <?php echo $profile->name; ?>
+                  <?php echo $profile->get('name'); ?>
                 </td>
               <tr>
               <tr>
@@ -101,7 +101,7 @@
                   Birthday:
                 </td>
                 <td>
-                  <?php $profile->birthday; ?>
+                  <?php "$profile->birthday"; ?>
                 </td>
               <tr>
               <tr>

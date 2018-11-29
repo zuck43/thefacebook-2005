@@ -10,7 +10,7 @@
 </head>
 <?php
 include('./lib/classes/profile.php');
-$profile = new profile();
+$profile = new profile($_GET['id']);
 ?>
 <body>
   <center>

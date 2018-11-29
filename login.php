@@ -8,7 +8,11 @@
   <link rel="StyleSheet" href="style.css" type="text/css" title="8-bit Color Style">
   <link rel="Shortcut icon" href="images/favicon.ico">
 </head>
-
+<?php
+if (isset($_POST['submit'])){
+  header('Location: profile.php?id=' . '3');
+}
+?>
 <body>
   <center>
     <table class="bordertable" width="700" cellspacing="0" cellpadding="0" border="0">
@@ -106,7 +110,7 @@
                               <p class="title">[ Login ]</p>
                               <p>
                               </p>
-                              <form method="post" action="login.php?">
+                              <form method="post" action="login.php">
                                 <input type="hidden" name="page" value="">
                                 <table cellspacing="0" cellpadding="2" border="0">
                                   <tbody>
@@ -124,7 +128,7 @@
                                     </tr>
                                   </tbody>
                                 </table>
-                                <input type="submit" value="   Login   " class="inputsubmit">&nbsp;&nbsp;
+                                <input type="submit" value="Login" class="inputsubmit" name="submit">&nbsp;&nbsp;
                                 <input type="button" value="Register" class="inputsubmit" onclick="javascript:document.location='register.php';">
                               </form>
                               <p>&nbsp;<br>If you have forgotten your password, click <a href="reset.php">here</a> to reset it.<br>&nbsp;

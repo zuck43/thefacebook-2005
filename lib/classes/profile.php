@@ -2,6 +2,8 @@
 
 class profile{
 
+  public $id;
+
   public $name = 'Mark Zuckerberg';
   public $school = 'Harvard';
   public $status = 'Single';
@@ -21,6 +23,18 @@ class profile{
   public $interests = 'Traveling, Reading';
   public $music = 'Hip Hop';
   public $defaultpic = 'default.jpg';
+
+  public $profile = array(
+    "name"=>"Mark Zuckerberg"
+  );
+
+  public function __construct($id) {
+    $this->id = $id;
+  }
+
+  public function get($key){
+    return $this->profile[$key];
+  }
 
 }
 
