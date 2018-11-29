@@ -22,7 +22,7 @@ class profile{
   public $political_view = "";
   public $interests = "";
   public $favourite_music = "";
-  public $default_pic = "";
+  public $picture = "";
 
   public $profile = array();
 
@@ -30,13 +30,16 @@ class profile{
     $this->id = $id;
 
     /*
-    BEGIN DATA
-    select * from users where id = $id
+    $sql = "SELECT * FROM users WHERE id = $user_id";
+    $query = mysql_query($sql) or die(mysql_error());
+    $info = mysql_fetch_array($query);
     */
+
+    /* BEGIN DATA */
     $zuck = array(
       "name"=>"Mark Zuckerberg",
-      "member_since"=>"01/01/2004",
-      "last_update"=>"01/01/2005",
+      "member_since"=>"04/04/2004",
+      "last_update"=>"05/05/2005",
       "school"=>"Harvard",
       "status"=>"Student",
       "sex"=>"Male",
@@ -46,13 +49,13 @@ class profile{
       "email"=>"zuck@facebook.com",
       "screenname"=>"zuck",
       "mobile"=>"5551234",
-      "looking_for"=>"Female",
+      "looking_for"=>"Friendship",
       "interested_in"=>"Woman",
       "relaionship"=>"Single",
       "political_view"=>"Liberal",
       "interests"=>"Traveling, Reading",
       "favourite_music"=>"Hip Hop",
-      "default_pic"=>"default.jpg",
+      "picture"=>"default.jpg",
     );
     foreach ($zuck as $key => $value) {
       $profile[$key]=$value;
@@ -77,7 +80,7 @@ class profile{
     $this->political_view = $profile["political_view"];
     $this->interests = $profile["interests"];
     $this->favourite_music = $profile["favourite_music"];
-    $this->default_pic = $profile["default_pic"];
+    $this->picture = $profile["picture"];
 
   }
 

@@ -17,7 +17,7 @@
           <tr>
             <td align=center>
               <?PHP
-              $pic=$profile->defaultpic;
+              $pic=$profile->picture;
               echo "<img src=images/default.jpg>";
               ?>
             </td>
