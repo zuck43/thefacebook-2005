@@ -3,11 +3,11 @@
     <td class='white' bgcolor=#3B5998 colspan=2>
       Information
     </td>
-    <?php if($uid==$id){ ?>
+
     <td align=right class='white' bgcolor=#3B5998>
       [ <a href="editprofile.php" class=menu>edit</a> ]
     </td>
-    <?php } ?>
+
   </tr>
 </table>
 
@@ -37,7 +37,7 @@
                   Member&nbsp;Since:
                 </td>
                 <td>
-                  <?php echo '01/01/2005'; ?>
+                  <?php echo $profile->member_sice; ?>
                 </td>
               <tr>
               <tr>
@@ -45,24 +45,17 @@
                   Last&nbsp;Update:
                 </td>
                 <td>
-                  <?php echo '01/01/2005'; ?>
+                  <?php echo $profile->last_update; ?>
                 </td>
               <tr>
               <tr>
 
-                <?php if($uid==$id){?>
                 <td>
                   <b>Basic Info:</b>
                 </td>
                 <td align=right style="color:#538ae2">
                   [ <a href="editprofile.php?s=basic">edit</a> ]
                 </td>
-                <?php } else {?>
-                <td colspan=2>
-                  <b>Basic Info:</b>
-                </td>
-                <?php } ?>
-
               </tr>
               <tr>
                 <td>
@@ -90,14 +83,6 @@
               <tr>
               <tr>
                 <td>
-                  Residence:
-                </td>
-                <td>
-                  <?php echo "$profile->residence"; ?>
-                </td>
-              <tr>
-              <tr>
-                <td>
                   Birthday:
                 </td>
                 <td>
@@ -109,7 +94,7 @@
                   Home&nbsp;Town:
                 </td>
                 <td>
-                  <?php echo "$profile->hometown"; ?>
+                  <?php echo "$profile->home_town"; ?>
                 </td>
               <tr>
               <tr>
@@ -117,23 +102,17 @@
                   Highschool:
                 </td>
                 <td>
-                  <?php echo $profile->highschool; ?>
+                  <?php echo $profile->high_school; ?>
                 </td>
               <tr>
               <tr>
 
-                <?php if($uid==$id){?>
                 <td>
                   <b>Contact Info:</b>
                 </td>
                 <td align=right style="color:#538ae2">
                   [ <a href="editprofile.php?s=contact">edit</a> ]
                 </td>
-                <?php } else {?>
-                <td colspan=2>
-                  <b>Contact Info:</b>
-                </td>
-                <?php } ?>
 
               </tr>
               <tr>
@@ -162,33 +141,18 @@
               <tr>
               <tr>
                 <td>
-                  Websites:
-                </td>
-                <td>
-                  <?php echo $profile->website; ?>
-                </td>
-              <tr>
-              <tr>
-                <?php if($uid==$id){?>
-                <td>
                   <b>Personal Info:</b>
                 </td>
                 <td align=right style="color:#538ae2">
                   [ <a href="editprofile.php?s=personal">edit</a> ]
                 </td>
-                <?php } else {?>
-                <td colspan=2>
-                  <b>Personal Info:</b>
-                </td>
-                <?php } ?>
-
               </tr>
               <tr>
                 <td>
                   Looking&nbsp;For:
                 </td>
                 <td>
-                  <?php echo $profile->lookingfor ?>
+                  <?php echo $profile->looking_for ?>
                 </td>
               <tr>
               <tr>
@@ -196,7 +160,7 @@
                   Interested&nbsp;In:
                 </td>
                 <td>
-                  <?php $profile->interestedin ?>
+                  <?php $profile->interested_in ?>
                 </td>
               <tr>
               <tr>
@@ -204,7 +168,7 @@
                   Relationship&nbsp;Status:
                 </td>
                 <td>
-                  <?php echo $profile->relstatus	?>
+                  <?php echo $profile->reltionship	?>
                 </td>
               <tr>
               <tr>
@@ -212,7 +176,7 @@
                   Political&nbsp;Views:
                 </td>
                 <td>
-                  <?php echo $profile->political; ?>
+                  <?php echo $profile->political_view; ?>
                 </td>
               <tr>
               <tr>
@@ -228,10 +192,9 @@
                   Music:
                 </td>
                 <td>
-                  <?php $profile->music	?>
+                  <?php $profile->favourite_music	?>
                 </td>
-              <tr>
-
+              </tr>
             </table>
           </td>
         </tr>
