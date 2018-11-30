@@ -81,7 +81,7 @@
                               </tbody>
                             </table>
                             <center>
-                              <p class="title">[ Read MEssages ]</p>
+                              <p class="title">[ Read Messages ]</p>
                               <center>
                                 <table width="95%" cellspacing="0" cellpadding="0" border="0">
                                   <tbody>
