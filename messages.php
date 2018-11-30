@@ -68,52 +68,16 @@
                       <tbody>
                         <tr>
                           <td>
-
                             <table width="100%" cellspacing="0" cellpadding="2" border="0">
                               <tbody>
                                 <tr>
-                                  <td class="white" bgcolor="#3B5998">Search Results</td>
+                                  <td class="white" bgcolor="#3B5998">Edit Profile !</td>
                                 </tr>
                               </tbody>
                             </table>
                             <center>
-                              <table width="100%" cellspacing="0" cellpadding="2" border="0">
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <center>
-                                          <?php
-                                          foreach ($_GET as $search_id => $search_term){
-                                            echo "
-                                            <table class='bordertable' cellspacing=0 cellpadding=2 border=0 width=100%>
-                                              <tr>
-                                                <td>
-                                                  <table cellspacing=0 cellpadding=0 border=0>
-                                                    <tr>
-                                                      <td>
-                                                        <table cellspacing=0 cellpadding=2 border=0>
-                                                          <tr>
-                                                            <td colspan=2>
-                                                              <b>Search Results for ".$search_id." :</b> ".$search_term."
-                                                            </td>
-                                                          </tr>
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                          ";
-                                          }
-                                          ?>
-                                        </center>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                              <p class="title">[ Sorry ! ]<br>&nbsp;<table width="95%" cellspacing="0" cellpadding="0" border="0">
+                                This is just a simulation of Thefacebook in 2005
                               </p>
                             </center>
                           </td>

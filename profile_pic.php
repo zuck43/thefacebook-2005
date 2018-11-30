@@ -44,7 +44,7 @@
       <table class='bottomborder' cellspacing=0 cellpadding=2 border=0 width=100%>
         <tr>
           <td>
-            <a href="editprofile.php">Edit your profile</a>
+            <a href="edit_profile.php">Edit your profile</a>
           </td>
         </tr>
       </table>

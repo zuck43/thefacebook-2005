@@ -5,7 +5,7 @@
     </td>
 
     <td align=right class='white' bgcolor=#3B5998>
-      [ <a href="editprofile.php" class=menu>edit</a> ]
+      [ <a href="edit_profile.php" class=menu>edit</a> ]
     </td>
 
   </tr>
@@ -54,7 +54,7 @@
                   <b>Basic Info:</b>
                 </td>
                 <td align=right style="color:#538ae2">
-                  [ <a href="editprofile.php?s=basic">edit</a> ]
+                  [ <a href="edit_profile.php?s=basic">edit</a> ]
                 </td>
               </tr>
               <tr>
@@ -111,7 +111,7 @@
                   <b>Contact Info:</b>
                 </td>
                 <td align=right style="color:#538ae2">
-                  [ <a href="editprofile.php?s=contact">edit</a> ]
+                  [ <a href="edit_profile.php?s=contact">edit</a> ]
                 </td>
 
               </tr>
@@ -144,7 +144,7 @@
                   <b>Personal Info:</b>
                 </td>
                 <td align=right style="color:#538ae2">
-                  [ <a href="editprofile.php?s=personal">edit</a> ]
+                  [ <a href="edit_profile.php?s=personal">edit</a> ]
                 </td>
               </tr>
               <tr>

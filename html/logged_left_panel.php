@@ -19,13 +19,13 @@
   <tr>
     <td align=left>
       <p style="color:#538ADC">
-        <a href="profile.php">My Profile</a> [ <a href="editprofile.php">edit</a> ]<br>
+        <a href="profile.php?id=3">My Profile</a> [ <a href="edit_profile.php">edit</a> ]<br>
         <a href="friends.php">My Friends</a><br>
         <a href="groups.php">My Groups</a><br>
         <a href="messages.php">My Messages</a> <?PHP echo "<b>2</b>"; ?>
         <br>
         <a href="account.php">My Account</a><br>
-        <a href="accountprivacy.php">My Privacy</a><br>
+        <a href="privacy.php">My Privacy</a><br>
       </p>
     </td>
   </tr>
