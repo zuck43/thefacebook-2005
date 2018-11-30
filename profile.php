@@ -96,7 +96,15 @@ if ($_GET['id'] == $_SESSION['id']){
                             <table width="100%" cellspacing="0" cellpadding="2" border="0">
                               <tbody>
                                 <tr>
-                                  <td class="white" bgcolor="#3B5998">Profile (This is you)</td>
+                                  <td class="white" bgcolor="#3B5998">
+                                    <?php
+                                    if ($_GET['id'] == $_SESSION['id']){
+                                      echo "Profile (This is you)";
+                                    } else {
+                                      echo "$profile->name";
+                                    }
+                                    ?>
+                                  </td>
                                   <table width="100%" cellspacing="0" cellpadding="2" border="0">
                                     <tbody>
                                       <tr>
