@@ -4,12 +4,12 @@
 
 $info1 = array(
   "name"=>"Dupont",
-  "member_since"=>"04/04/2004",
-  "last_update"=>"05/05/2005",
+  "member_since"=>"04-04-2004",
+  "last_update"=>"05-05-2005",
   "school"=>"Harvard",
   "status"=>"Student",
   "sex"=>"Male",
-  "birthday"=>"14/05/1984",
+  "birthday"=>"14-05-1984",
   "home_town"=>"Paris",
   "high_school"=>"Carnot",
   "email"=>"dupont@example.com",
@@ -26,12 +26,12 @@ $info1 = array(
 
 $info2 = array(
   "name"=>"Durand",
-  "member_since"=>"04/04/2004",
-  "last_update"=>"05/05/2005",
+  "member_since"=>"04-04-2004",
+  "last_update"=>"05-05-2005",
   "school"=>"Harvard",
   "status"=>"Student",
   "sex"=>"Male",
-  "birthday"=>"14/05/1984",
+  "birthday"=>"14-05-1984",
   "home_town"=>"Paris",
   "high_school"=>"Carnot",
   "email"=>"durand@example.com",
@@ -48,12 +48,12 @@ $info2 = array(
 
 $info3 = array(
   "name"=>"Mark Zuckerberg",
-  "member_since"=>"04/04/2004",
-  "last_update"=>"05/05/2005",
+  "member_since"=>"04-04-2004",
+  "last_update"=>"05-05-2005",
   "school"=>"Harvard",
   "status"=>"Student",
   "sex"=>"Male",
-  "birthday"=>"14/05/1984",
+  "birthday"=>"14-05-1984",
   "home_town"=>"San Francisco, CA",
   "high_school"=>"MIT",
   "email"=>"zuck@facebook.com",

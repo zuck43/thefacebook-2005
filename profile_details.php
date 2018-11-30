@@ -37,7 +37,7 @@
                   Member&nbsp;Since:
                 </td>
                 <td>
-                  <?php echo "$profile->member_since"; ?>
+                  <?php echo date('F j, Y', strtotime($profile->member_since)); ?>
                 </td>
               <tr>
               <tr>
@@ -45,7 +45,7 @@
                   Last&nbsp;Update:
                 </td>
                 <td>
-                  <?php echo "$profile->last_update"; ?>
+                  <?php echo date('F j, Y', strtotime($profile->last_update)); ?>
                 </td>
               <tr>
               <tr>
@@ -86,7 +86,7 @@
                   Birthday:
                 </td>
                 <td>
-                  <?php echo "$profile->birthday"; ?>
+                  <?php echo date('F j, Y', strtotime($profile->birthday)); ?>
                 </td>
               <tr>
               <tr>
