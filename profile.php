@@ -10,16 +10,15 @@
 </head>
 <?php
 session_start();
-echo $_GET['id'];
-echo "/";
-echo $_SESSION['id'];
-if (isset($_SESSION['id'])){
+
+if ($_GET['id'] == $_SESSION['id']){
   include('./lib/classes/profile.php');
   $profile = new profile($_SESSION['id']);
 } else {
   include('./lib/classes/profile.php');
   $profile = new profile($_GET['id']);
 }
+
 ?>
 <body>
   <center>
@@ -77,7 +76,13 @@ if (isset($_SESSION['id'])){
                       <tbody>
                         <tr>
                           <td>
-                            <?php include('./html/logged_left_panel.php');  ?>
+                            <?php
+                            if (isset($_SESSION['id'])){
+                              include('./html/logged_left_panel.php');
+                            } else {
+                              include('./html/default_left_panel.php');
+                            }
+                            ?>
                           </td>
                         </tr>
                       </tbody>
@@ -98,8 +103,10 @@ if (isset($_SESSION['id'])){
                                         <td>
                                           <?php include('profile_pic.php');  ?>
                                           <?php
-                                          if (isset($_SESSION['id'])){
+                                          if ($_GET['id'] == $_SESSION['id']){
                                             include('profile_box.php');
+                                          } else {
+                                            include('profile_action.php');
                                           }
                                           ?>
                                         </td>

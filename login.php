@@ -10,19 +10,19 @@
 </head>
 <?php
 
+session_start();
+
 if (isset($_POST['submit'])){
   if (($_POST['email'] == 'demo') && ($_POST['pass'] == 'demo')){
-    session_start();
     $_SESSION['id'] = '1';
     header('Location: profile.php?id='.'1');
   } else {
     header('Location: login.php');
   };
 }
-echo $_SESSION['id'];
-echo "logout" . $_GET['logout'];
+
 if ($_GET['logout'] == 1){
-  unset($_SESSION['id']);
+  session_unset();
   session_destroy();
 }
 
