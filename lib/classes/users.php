@@ -65,7 +65,7 @@ $info3 = array(
   "political_view"=>"Liberal",
   "interests"=>"Traveling, Reading",
   "favourite_music"=>"Hip Hop",
-  "picture"=>"default.jpg"
+  "picture"=>"1234567890.jpg"
 );
 
 $info = array($info1, $info2, $info3);

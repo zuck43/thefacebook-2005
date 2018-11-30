@@ -130,11 +130,11 @@ if ($_GET['logout'] == 1){
                                   <tbody>
                                     <tr>
                                       <td>Email:</td>
-                                      <td><input type="text" class="inputtext" name="email" id="email" value="" size="30"></td>
+                                      <td><input placeholder="demo" type="text" class="inputtext" name="email" id="email" value="" size="30"></td>
                                     </tr>
                                     <tr>
                                       <td>Password:</td>
-                                      <td><input type="password" class="inputtext" name="pass" id="pass" size="30"></td>
+                                      <td><input placeholder="demo" type="password" class="inputtext" name="pass" id="pass" size="30"></td>
                                     </tr>
                                     <tr height="7">
                                       <td></td>

@@ -1,4 +1,4 @@
-<table class='bordertable' cellspacing=0 cellpadding=0 width=100% valign=top>
+<table class='bordertable' cellspacing=0 cellpadding=0 width=100%>
   <tr>
     <td>
       <table cellspacing=0 cellpadding=2 border=0 width=100%>
@@ -18,7 +18,7 @@
             <td align=center>
               <?PHP
               $pic=$profile->picture;
-              echo "<img src=images/default.jpg>";
+              echo "<img src=images/".$pic.">";
               ?>
             </td>
           </tr>

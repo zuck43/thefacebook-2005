@@ -100,7 +100,7 @@ if ($_GET['id'] == $_SESSION['id']){
                                   <table width="100%" cellspacing="0" cellpadding="2" border="0">
                                     <tbody>
                                       <tr>
-                                        <td>
+                                        <td valign=top>
                                           <?php include('profile_pic.php');  ?>
                                           <?php
                                           if ($_GET['id'] == $_SESSION['id']){

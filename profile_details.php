@@ -29,7 +29,7 @@
                   Name:
                 </td>
                 <td style="width:187px">
-                  <?php echo $profile->get('name'); ?>
+                  <?php echo "$profile->name"; ?>
                 </td>
               <tr>
               <tr>
