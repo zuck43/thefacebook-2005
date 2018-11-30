@@ -36,7 +36,9 @@
                         </tr>
                         <tr>
                           <td>
-                            <?php include('./html/default_header.php'); ?>
+                            <?php
+                              include('./html/logged_header.php');
+                            ?>
                           </td>
                         </tr>
                       </tbody>
@@ -57,7 +59,9 @@
                       <tbody>
                         <tr>
                           <td>
-                            <?php include('./html/default_left_panel.php');  ?>
+                            <?php
+                              include('./html/logged_left_panel.php');
+                            ?>
                           </td>
                         </tr>
                       </tbody>
@@ -68,17 +72,55 @@
                       <tbody>
                         <tr>
                           <td>
+
                             <table width="100%" cellspacing="0" cellpadding="2" border="0">
                               <tbody>
                                 <tr>
-                                  <td class="white" bgcolor="#3B5998">Edit Profile !</td>
+                                  <td class="white" bgcolor="#3B5998">Read Messages</td>
                                 </tr>
                               </tbody>
                             </table>
                             <center>
-                              <p class="title">[ Sorry ! ]<br>&nbsp;<table width="95%" cellspacing="0" cellpadding="0" border="0">
-                                This is just a simulation of Thefacebook in 2005
-                              </p>
+                              <p class="title">[ Read MEssages ]</p>
+                              <center>
+                                <table width="95%" cellspacing="0" cellpadding="0" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <center>
+                                          <table class="bordertable" width="90%" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                  <table width="100%" cellspacing="0" cellpadding="2" border="0">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td class="white" bgcolor="#3B5998">Messages</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>&nbsp;<br>
+                                                  <center>
+                                                    <table width="95%" cellspacing="0" cellpadding="2" border="0">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>From : Mark Zuckerberg<br>&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td><p>We are glad to see you in our community.</p></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </center>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table><br>&nbsp;<center>
+                                        </center>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </center>
                             </center>
                           </td>
                         </tr>
@@ -89,7 +131,18 @@
               </tbody>
             </table>
             <center>
-              <?php include('./html/footer.php'); ?>
+              <p><a href="about.php">about</a>&nbsp;&nbsp;
+                <a href="contact.php">contact</a>&nbsp;&nbsp;
+                <a href="jobs.php">jobs</a>&nbsp;&nbsp;
+                <!--<a href="faq.php">faq</a>&nbsp;&nbsp;-->
+                <a href="announce.php">announce</a>&nbsp;&nbsp;
+                <a href="media.php">advertise</a>&nbsp;&nbsp;
+                <a href="terms.php">terms</a>&nbsp;&nbsp;
+                <a href="policy.php">privacy</a>&nbsp;&nbsp;<span title="ik">&nbsp;</span>&nbsp;&nbsp;
+                <br>a Mark Zuckerberg production
+                <br>Thefacebook <span title="163ms">©</span> <span title="">20</span><span title="405384">05</span>
+                <br>
+              </p>
             </center><br>
           </td>
         </tr>
