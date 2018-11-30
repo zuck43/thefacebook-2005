@@ -72,7 +72,13 @@
                             <table width="100%" cellspacing="0" cellpadding="2" border="0">
                               <tbody>
                                 <tr>
-                                  <td class="white" bgcolor="#3B5998">Search Results</td>
+                                  <?php
+                                    if (!empty($_GET)){
+                                      echo "<td class='white' bgcolor='#3B5998'>Search Results</td>";
+                                    }else{
+                                      echo "<td class='white' bgcolor='#3B5998'>Search</td>";
+                                    }
+                                  ?>
                                 </tr>
                               </tbody>
                             </table>
@@ -83,30 +89,41 @@
                                       <td>
                                         <center>
                                           <?php
-                                          foreach ($_GET as $search_id => $search_term){
-                                            echo "
-                                            <table class='bordertable' cellspacing=0 cellpadding=2 border=0 width=100%>
-                                              <tr>
-                                                <td>
-                                                  <table cellspacing=0 cellpadding=0 border=0>
-                                                    <tr>
-                                                      <td>
-                                                        <table cellspacing=0 cellpadding=2 border=0>
-                                                          <tr>
-                                                            <td colspan=2>
-                                                              <b>Search Results for ".$search_id." :</b> ".$search_term."
+                                          if (empty($_GET)){
+                                            echo  "<center>
+                                                    <p>
+                                                      <form action='search.php'>
+                                                        <input class='inputtext' name=query type=text >
+                                                        <input type='submit' class='inputsubmit' value='go'>
+                                                      </form>
+                                                    </p>
+                                                    </center>";
+                                          }else{
+                                            foreach ($_GET as $search_id => $search_term){
+                                              echo "
+                                              <table class='bordertable' cellspacing=0 cellpadding=2 border=0 width=100%>
+                                                <tr>
+                                                  <td>
+                                                    <table cellspacing=0 cellpadding=0 border=0>
+                                                      <tr>
+                                                        <td>
+                                                          <table cellspacing=0 cellpadding=2 border=0>
+                                                            <tr>
+                                                              <td colspan=2>
+                                                                <b>Search Results for ".$search_id." :</b> ".$search_term."
+                                                              </td>
+                                                            </tr>
                                                             </td>
                                                           </tr>
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                          ";
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            ";
+                                            }
                                           }
                                           ?>
                                         </center>
