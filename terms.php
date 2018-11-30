@@ -10,48 +10,77 @@
 </head>
 
 <body>
-  <div id="book">
+  <center>
+    <table class="bordertable" width="700" cellspacing="0" cellpadding="0" border="0">
+      <tbody>
+        <tr>
+          <td>
+            <table class="bottomborder" width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+                  <td width="350" bgcolor="#3B5998"><img src="./images/logo-left.jpg"></td>
+                  <td>
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <tbody>
+                                <tr>
+                                  <td bgcolor="#3B5998"><a href="index.php"><img src="./images/logo-right.jpg" border="0"></a></td>
+                                  <td width="100%" bgcolor="#3B5998">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <?php include('./html/default_header.php'); ?>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" cellspacing="0" cellpadding="2" border="0">
+              <tbody>
+                <tr>
+                  <td valign="top">
+                    <table width="105" cellspacing="0" cellpadding="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <?php include('./html/default_left_panel.php');  ?>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td width="595" valign="top">
+                    <table class="bordertable" width="100%" cellspacing="0" cellpadding="0" border="1">
+                      <tbody>
+                        <tr>
+                          <td>
 
-
-
-    <!--10.1.0.47-->
-
-
-    <div id="pageheader">
-      <div id="homelink" onclick="location.href='index.php';" style="cursor: pointer;"> </div>
-      <ul id="gnav">
-        <li><a href="login.php">login</a></li>
-        <li><a href="register.php">register</a></li>
-        <li><a href="about.php">about</a></li>
-        <li><a href="faq.php">faq</a></li>
-      </ul>
-    </div>
-
-    <div id="sidebar">
-      <div id="squicklogin">
-        <form method="post" action="login.php">
-          <label for="email">E-mail:</label>
-          <input type="hidden" name="noerror" value="1 /">
-          <input class="inputtext" type="text" name="email" value="" id="email" size="20">
-          <label for="pass">Password:</label>
-          <input class="inputtext" type="password" name="pass" id="pass" size="20">
-          <div class="buttons">
-            <input type="submit" class="inputsubmit" value="Login"> <input type="button" class="inputsubmit" value="Register" onclick="javascript:document.location='register.php';">
-          </div>
-        </form>
-      </div>
-      <div id="ssponsor">
-      </div>
-    </div>
-    <div id="pagebody">
-      <div id="header" class="withsubheader">
-        <h1>Privacy Policy</h1>
-      </div>
-      <div id="subheader">
-        <h2>This policy is effective as of June 28, 2005.</h2>
-      </div>
-      <div id="content">
-        <div id="faqanswers">
+                            <table width="100%" cellspacing="0" cellpadding="2" border="0">
+                              <tbody>
+                                <tr>
+                                  <td class="white" bgcolor="#3B5998">Search Results</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <center>
+    <table class="bordertable" width="700" cellspacing="0" cellpadding="0" border="0">
+      <tbody>
+        <tr>
+          <td>
           <table width="93%" align="center">
             <tbody>
               <tr>
@@ -200,34 +229,13 @@
               </tr>
             </tbody>
           </table><br><br>
-        </div>
-      </div>
-      <!-- content -->
-
-      <div id="pagefooter">
-        <p>
-          <a href="about.php">about</a>
-          <a href="contact.php">contact</a> <a href="announce.php">announce</a>
-          <a href="media.php">advertise</a>
-          <a href="terms.php">terms</a>
-          <a href="policy.php">privacy</a>
-        </p>
-        <p>a Mark Zuckerberg production</p>
-        <p>Facebook <span title="?? ms">©</span> <span title="10.1.0.47">20</span><span title="294352">05</span></p>
-      </div>
-
-    </div>
-    <!-- book -->
-
-    <!-- ads -->
-    <div style="width: 760px; text-align: center; clear: both; margin: 10px auto 15px auto;">
-    </div>
-    <!-- ads -->
-
-
-
-
-  </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <center>
+    <?php include('./html/footer.php'); ?>
+  </center><br>
 </body>
 
 </html>
