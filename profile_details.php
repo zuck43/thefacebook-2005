@@ -86,7 +86,7 @@
                   Birthday:
                 </td>
                 <td>
-                  <?php "$profile->birthday"; ?>
+                  <?php echo "$profile->birthday"; ?>
                 </td>
               <tr>
               <tr>
@@ -102,7 +102,7 @@
                   Highschool:
                 </td>
                 <td>
-                  <?php echo $profile->high_school; ?>
+                  <?php echo "$profile->high_school"; ?>
                 </td>
               <tr>
               <tr>
@@ -120,7 +120,7 @@
                   Email:
                 </td>
                 <td>
-                  <?php echo $profile->email; ?>
+                  <?php echo "$profile->email"; ?>
                 </td>
               <tr>
               <tr>
@@ -128,7 +128,7 @@
                   Screenname:
                 </td>
                 <td>
-                  <?php echo $profile->screenname; ?>
+                  <?php echo "$profile->screenname"; ?>
                 </td>
               <tr>
               <tr>
@@ -136,7 +136,7 @@
                   Mobile:
                 </td>
                 <td>
-                  <?php echo $profile->mobile; ?>
+                  <?php echo "$profile->mobile"; ?>
                 </td>
               <tr>
               <tr>
@@ -152,7 +152,7 @@
                   Looking&nbsp;For:
                 </td>
                 <td>
-                  <?php echo $profile->looking_for ?>
+                  <?php echo "$profile->looking_for"; ?>
                 </td>
               <tr>
               <tr>
@@ -160,7 +160,7 @@
                   Interested&nbsp;In:
                 </td>
                 <td>
-                  <?php $profile->interested_in ?>
+                  <?php echo "$profile->interested_in"; ?>
                 </td>
               <tr>
               <tr>
@@ -168,7 +168,7 @@
                   Relationship&nbsp;Status:
                 </td>
                 <td>
-                  <?php echo $profile->relationship	?>
+                  <?php echo "$profile->relationship";	?>
                 </td>
               <tr>
               <tr>
@@ -176,7 +176,7 @@
                   Political&nbsp;Views:
                 </td>
                 <td>
-                  <?php echo $profile->political_view; ?>
+                  <?php echo "$profile->political_view"; ?>
                 </td>
               <tr>
               <tr>
@@ -184,7 +184,7 @@
                   Interests:
                 </td>
                 <td>
-                  <?php $profile->interests; ?>
+                  <?php echo "$profile->interests"; ?>
                 </td>
               <tr>
               <tr>
@@ -192,7 +192,7 @@
                   Music:
                 </td>
                 <td>
-                  <?php $profile->favourite_music	?>
+                  <?php echo "$profile->favourite_music";	?>
                 </td>
               </tr>
             </table>
