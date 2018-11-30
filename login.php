@@ -9,9 +9,22 @@
   <link rel="Shortcut icon" href="images/favicon.ico">
 </head>
 <?php
+
 if (isset($_POST['submit'])){
-  header('Location: profile.php?id=' . '3');
+  if (($_POST['email'] == 'demo') && ($_POST['pass'] == 'demo')){
+    session_start();
+    $_SESSION['id'] = '1';
+    header('Location: profile.php?id='.'1');
+  } else {
+    header('Location: login.php');
+  };
 }
+
+if ($_GET['logout'] == '1'){
+  session_unset();
+  session_destroy();
+}
+
 ?>
 <body>
   <center>

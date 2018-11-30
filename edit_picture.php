@@ -8,16 +8,7 @@
   <link rel="StyleSheet" href="style.css" type="text/css" title="8-bit Color Style">
   <link rel="Shortcut icon" href="images/favicon.ico">
 </head>
-<?php
-session_start();
-if (isset($_SESSION['id'])){
-  include('./lib/classes/profile.php');
-  $profile = new profile($_SESSION['id']);
-} else {
-  include('./lib/classes/profile.php');
-  $profile = new profile($_GET['id']);
-}
-?>
+
 <body>
   <center>
     <table class="bordertable" width="700" cellspacing="0" cellpadding="0" border="0">
@@ -45,15 +36,7 @@ if (isset($_SESSION['id'])){
                         </tr>
                         <tr>
                           <td>
-                            <?php
-
-                            if (isset($_SESSION['id'])){
-                              include('./html/logged_header.php');
-                            } else {
-                              include('./html/default_header.php');
-                            }
-
-                            ?>
+                            <?php include('./html/default_header.php'); ?>
                           </td>
                         </tr>
                       </tbody>
@@ -69,12 +52,12 @@ if (isset($_SESSION['id'])){
             <table width="100%" cellspacing="0" cellpadding="2" border="0">
               <tbody>
                 <tr>
-                  <td valign=top>
-                    <table width="125" cellspacing="0" cellpadding="0" border="0">
+                  <td valign="top">
+                    <table width="105" cellspacing="0" cellpadding="0" border="0">
                       <tbody>
                         <tr>
                           <td>
-                            <?php include('./html/logged_left_panel.php');  ?>
+                            <?php include('./html/default_left_panel.php');  ?>
                           </td>
                         </tr>
                       </tbody>
@@ -88,40 +71,26 @@ if (isset($_SESSION['id'])){
                             <table width="100%" cellspacing="0" cellpadding="2" border="0">
                               <tbody>
                                 <tr>
-                                  <td class="white" bgcolor="#3B5998">Profile (This is you)</td>
-                                  <table width="100%" cellspacing="0" cellpadding="2" border="0">
-                                    <tbody>
-                                      <tr>
-                                        <td>
-                                          <?php include('profile_pic.php');  ?>
-                                          <?php
-                                          if (isset($_SESSION['id'])){
-                                            include('profile_box.php');
-                                          }
-                                          ?>
-                                        </td>
-                                        <td><?php include('profile_details.php');  ?></td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                  <td class="white" bgcolor="#3B5998">Edit Profile !</td>
                                 </tr>
                               </tbody>
                             </table>
+                            <center>
+                              <p class="title">[ Sorry ! ]<br>&nbsp;<table width="95%" cellspacing="0" cellpadding="0" border="0">
+                                This is just a simulation of Thefacebook in 2005
+                              </p>
+                            </center>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </td>
                 </tr>
-                <tr>
-                  <td>
-                    <center>
-                      <?php include('./html/footer.php'); ?>
-                    </center><br>
-                  </td>
-                </tr>
               </tbody>
             </table>
+            <center>
+              <?php include('./html/footer.php'); ?>
+            </center><br>
           </td>
         </tr>
       </tbody>
