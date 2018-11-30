@@ -103,7 +103,7 @@
                                                     <table width="95%" cellspacing="0" cellpadding="2" border="0">
                                                       <tbody>
                                                         <tr>
-                                                          <td>From : Mark Zuckerberg<br>&nbsp;</td>
+                                                          <td><b>From :</b> Mark Zuckerberg<br>&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                           <td><p>We are glad to see you in our community.</p></td>
