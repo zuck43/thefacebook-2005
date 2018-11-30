@@ -10,6 +10,9 @@
 </head>
 <?php
 session_start();
+echo $_GET['id'];
+echo "/";
+echo $_SESSION['id'];
 if (isset($_SESSION['id'])){
   include('./lib/classes/profile.php');
   $profile = new profile($_SESSION['id']);

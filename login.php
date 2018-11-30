@@ -19,9 +19,10 @@ if (isset($_POST['submit'])){
     header('Location: login.php');
   };
 }
-
-if ($_GET['logout'] == '1'){
-  session_unset();
+echo $_SESSION['id'];
+echo "logout" . $_GET['logout'];
+if ($_GET['logout'] == 1){
+  unset($_SESSION['id']);
   session_destroy();
 }
 

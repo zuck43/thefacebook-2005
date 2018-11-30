@@ -36,7 +36,7 @@ class profile{
     */
     include("users.php");
 
-    foreach ($info as $key => $value) {
+    foreach ($info[$id-1] as $key => $value) {
       $profile[$key]=$value;
     };
 
