@@ -105,7 +105,7 @@ if ($_GET['id'] == $_SESSION['id']){
                                     }
                                     ?>
                                   </td>
-                                  <table width="100%" cellspacing="0" cellpadding="2" border="0">
+                                  <table width="100%" cellspacing="2" cellpadding="2" border="0">
                                     <tbody>
                                       <tr>
                                         <td valign=top>
